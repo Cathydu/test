@@ -1,0 +1,10 @@
+apiVersion: apps.kubeblocks.io/v1alpha1
+kind: OpsRequest
+metadata:
+  name: ops-horizontal-scaling8
+spec:
+  clusterRef: kb002
+  type: HorizontalScaling
+  horizontalScaling:
+    - componentName: kingbase-compdef
+      replicas: 3
